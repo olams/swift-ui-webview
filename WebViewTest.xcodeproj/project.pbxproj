@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6F3FC7F124D157E600238B5F /* test2.html in Resources */ = {isa = PBXBuildFile; fileRef = 6F3FC7F024D157E600238B5F /* test2.html */; };
 		6F53325C24D09E6C00653B61 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F53325B24D09E6C00653B61 /* AppDelegate.swift */; };
 		6F53325E24D09E6C00653B61 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F53325D24D09E6C00653B61 /* SceneDelegate.swift */; };
 		6F53326024D09E6C00653B61 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F53325F24D09E6C00653B61 /* ContentView.swift */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6F3FC7F024D157E600238B5F /* test2.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = test2.html; sourceTree = "<group>"; };
 		6F53325824D09E6C00653B61 /* WebViewTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebViewTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F53325B24D09E6C00653B61 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6F53325D24D09E6C00653B61 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -106,15 +108,16 @@
 			isa = PBXGroup;
 			children = (
 				6F53328D24D0A1C900653B61 /* test.html */,
+				6F3FC7F024D157E600238B5F /* test2.html */,
 				6F53328F24D0A20500653B61 /* stylesheet.css */,
 				6F53325B24D09E6C00653B61 /* AppDelegate.swift */,
 				6F53325D24D09E6C00653B61 /* SceneDelegate.swift */,
 				6F53325F24D09E6C00653B61 /* ContentView.swift */,
+				6F53328B24D09F3900653B61 /* MyWebView.swift */,
 				6F53326124D09E7900653B61 /* Assets.xcassets */,
 				6F53326624D09E7900653B61 /* LaunchScreen.storyboard */,
 				6F53326924D09E7900653B61 /* Info.plist */,
 				6F53326324D09E7900653B61 /* Preview Content */,
-				6F53328B24D09F3900653B61 /* MyWebView.swift */,
 			);
 			path = WebViewTest;
 			sourceTree = "<group>";
@@ -252,6 +255,7 @@
 				6F53328E24D0A1C900653B61 /* test.html in Resources */,
 				6F53326824D09E7900653B61 /* LaunchScreen.storyboard in Resources */,
 				6F53326524D09E7900653B61 /* Preview Assets.xcassets in Resources */,
+				6F3FC7F124D157E600238B5F /* test2.html in Resources */,
 				6F53329024D0A20500653B61 /* stylesheet.css in Resources */,
 				6F53326224D09E7900653B61 /* Assets.xcassets in Resources */,
 			);
