@@ -12,17 +12,13 @@ import SwiftUI
 struct ContentView: View {
   var body: some View {
     
-    List {
-      WebViewRow(fileName: "test")
-      WebViewRow(fileName: "test2")
-      WebViewRow(fileName: "test")
-      WebViewRow(fileName: "test2")
-      WebViewRow(fileName: "test")
-      WebViewRow(fileName: "test2")
-      WebViewRow(fileName: "test")
-      WebViewRow(fileName: "test2")
-
-    }
+    VStack {
+      Text ( "Webview in SwiftUI").font(.headline)
+      
+      DynamicWebView(fileName: "dynamictype")
+    
+      DynamicWebView(fileName: "dynamictype2")
+    }.background(Color.blue)
   }
 }
 

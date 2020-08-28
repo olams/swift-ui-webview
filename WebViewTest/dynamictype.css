@@ -3,6 +3,10 @@ body {
     font: -apple-system-body;
 }
 
+.title {
+    font: -apple-system-title;
+}
+
 .headline {
     font: -apple-system-headline;
 }
