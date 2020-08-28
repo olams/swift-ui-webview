@@ -11,14 +11,17 @@ import SwiftUI
 
 struct ContentView: View {
   var body: some View {
-    
-    VStack {
-      Text ( "Webview in SwiftUI").font(.headline)
-      
-      DynamicWebView(fileName: "dynamictype")
-    
-      DynamicWebView(fileName: "dynamictype2")
-    }.background(Color.blue)
+    GeometryReader { geometry in
+      ScrollView(.vertical) {
+        VStack {
+          Text ( "Webview in SwiftUI").font(.headline)
+          DynamicWebView(fileName: "dynamictype").background(Color.red)
+          
+          Text ("UILabel with HTML").font(.headline)
+          AsyncHTMLabel(urlString: "dynamictype", width: geometry.size.width)
+        }
+      }.background(Color.blue)
+    }
   }
 }
 
