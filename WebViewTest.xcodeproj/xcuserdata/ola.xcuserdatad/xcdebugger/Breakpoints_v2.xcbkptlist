@@ -7,17 +7,97 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "6EBC7E95-2DAC-4B83-8C02-F394D3D06778"
+            uuid = "7456D5EB-1C76-4B9D-8ED0-FCDD2018F2B6"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "WebViewTest/AsyncHTMLLabel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "32"
-            endingLineNumber = "32"
+            startingLineNumber = "47"
+            endingLineNumber = "47"
             landmarkName = "updateUIView(_:context:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "7456D5EB-1C76-4B9D-8ED0-FCDD2018F2B6 - b7254b8894cebc22"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "WebViewTest.AsyncHTMLabel.updateUIView(_: __C.UILabel, context: SwiftUI.UIViewRepresentableContext&lt;WebViewTest.AsyncHTMLabel&gt;) -&gt; ()"
+                  moduleName = "WebViewTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ola/Source/swift-ui-webview/WebViewTest/AsyncHTMLLabel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "645">
+               </Location>
+               <Location
+                  uuid = "7456D5EB-1C76-4B9D-8ED0-FCDD2018F2B6 - a0822cb88944add2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in WebViewTest.AsyncHTMLabel.updateUIView(_: __C.UILabel, context: SwiftUI.UIViewRepresentableContext&lt;WebViewTest.AsyncHTMLabel&gt;) -&gt; ()"
+                  moduleName = "WebViewTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ola/Source/swift-ui-webview/WebViewTest/AsyncHTMLLabel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "359">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "24074404-8A71-45E9-B521-C8EA0B4A4E30"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WebViewTest/AsyncHTMLLabel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "24074404-8A71-45E9-B521-C8EA0B4A4E30 - f2fb70e141802c25"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "WebViewTest.HTMLView.body.getter : some"
+                  moduleName = "WebViewTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ola/Source/swift-ui-webview/WebViewTest/AsyncHTMLLabel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "8">
+               </Location>
+               <Location
+                  uuid = "24074404-8A71-45E9-B521-C8EA0B4A4E30 - 894c441a94fa3f04"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (SwiftUI.GeometryProxy) -&gt; SwiftUI.Text in WebViewTest.HTMLView.body.getter : some"
+                  moduleName = "WebViewTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ola/Source/swift-ui-webview/WebViewTest/AsyncHTMLLabel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "202">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
