@@ -17,16 +17,15 @@ struct ContentView: View {
     "https://jf-ne.clarify.no/api/articles/16364635-collapsed.html?preferredLocale=en",
     "https://jf-ne.clarify.no/api/articles/16364635-collapsed.html?preferredLocale=en"
   ]
-  
-  @State var labelHeight: CGFloat = .zero
-  
+    
   var body: some View {
     
     GeometryReader { geometry in
-
       ScrollView {
-          HTMLView(urlString: "https://jf-ne.clarify.no/api/articles/16364635-expanded.html?preferredLocale=en")
-          }
+        ForEach (self.urls, id:\.self) { u in
+          HTMLView(htmlFetcher: HTMLFetcher(self.urls[0]), width: geometry.size.width)
+        }
+      }
     }
   }
 }

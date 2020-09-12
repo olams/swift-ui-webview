@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6F2EB5D824F8F2AB00D094A1 /* dynamictype2.html in Resources */ = {isa = PBXBuildFile; fileRef = 6F2EB5D724F8F2AB00D094A1 /* dynamictype2.html */; };
-		6F2EB5DA24F8F87C00D094A1 /* AsyncHTMLLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F2EB5D924F8F87C00D094A1 /* AsyncHTMLLabel.swift */; };
+		6F2EB5DA24F8F87C00D094A1 /* HTMLView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F2EB5D924F8F87C00D094A1 /* HTMLView.swift */; };
 		6F53325C24D09E6C00653B61 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F53325B24D09E6C00653B61 /* AppDelegate.swift */; };
 		6F53325E24D09E6C00653B61 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F53325D24D09E6C00653B61 /* SceneDelegate.swift */; };
 		6F53326024D09E6C00653B61 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F53325F24D09E6C00653B61 /* ContentView.swift */; };
@@ -22,6 +22,7 @@
 		6F53329024D0A20500653B61 /* dynamictype.css in Resources */ = {isa = PBXBuildFile; fileRef = 6F53328F24D0A20500653B61 /* dynamictype.css */; };
 		6FC05C55250BE9450095DC9A /* template.html in Resources */ = {isa = PBXBuildFile; fileRef = 6FC05C54250BE9450095DC9A /* template.html */; };
 		6FC05C57250BEB8E0095DC9A /* TemplateReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FC05C56250BEB8E0095DC9A /* TemplateReader.swift */; };
+		6FC05C59250CD4E90095DC9A /* HTMLFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FC05C58250CD4E90095DC9A /* HTMLFetcher.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,7 +44,7 @@
 
 /* Begin PBXFileReference section */
 		6F2EB5D724F8F2AB00D094A1 /* dynamictype2.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = dynamictype2.html; sourceTree = "<group>"; };
-		6F2EB5D924F8F87C00D094A1 /* AsyncHTMLLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncHTMLLabel.swift; sourceTree = "<group>"; };
+		6F2EB5D924F8F87C00D094A1 /* HTMLView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTMLView.swift; sourceTree = "<group>"; };
 		6F53325824D09E6C00653B61 /* WebViewTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebViewTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F53325B24D09E6C00653B61 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6F53325D24D09E6C00653B61 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +64,7 @@
 		6F53328F24D0A20500653B61 /* dynamictype.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = dynamictype.css; sourceTree = "<group>"; };
 		6FC05C54250BE9450095DC9A /* template.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = template.html; sourceTree = "<group>"; };
 		6FC05C56250BEB8E0095DC9A /* TemplateReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateReader.swift; sourceTree = "<group>"; };
+		6FC05C58250CD4E90095DC9A /* HTMLFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTMLFetcher.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,7 +124,8 @@
 				6F53325D24D09E6C00653B61 /* SceneDelegate.swift */,
 				6F53325F24D09E6C00653B61 /* ContentView.swift */,
 				6F53328B24D09F3900653B61 /* WebViewUI.swift */,
-				6F2EB5D924F8F87C00D094A1 /* AsyncHTMLLabel.swift */,
+				6FC05C58250CD4E90095DC9A /* HTMLFetcher.swift */,
+				6F2EB5D924F8F87C00D094A1 /* HTMLView.swift */,
 				6F53326124D09E7900653B61 /* Assets.xcassets */,
 				6F53326624D09E7900653B61 /* LaunchScreen.storyboard */,
 				6F53326924D09E7900653B61 /* Info.plist */,
@@ -292,7 +295,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6F2EB5DA24F8F87C00D094A1 /* AsyncHTMLLabel.swift in Sources */,
+				6FC05C59250CD4E90095DC9A /* HTMLFetcher.swift in Sources */,
+				6F2EB5DA24F8F87C00D094A1 /* HTMLView.swift in Sources */,
 				6F53325C24D09E6C00653B61 /* AppDelegate.swift in Sources */,
 				6FC05C57250BEB8E0095DC9A /* TemplateReader.swift in Sources */,
 				6F53328C24D09F3900653B61 /* WebViewUI.swift in Sources */,

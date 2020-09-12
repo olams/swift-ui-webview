@@ -11,25 +11,32 @@ import SwiftUI
 
 struct HTMLView : View {
   
-  var urlString:String
-  @State private var height: CGFloat = .zero
+  
+  // var urlString:String
+  @ObservedObject var htmlFetcher:HTMLFetcher
+  var width:CGFloat
 
   var body : some View {
-    GeometryReader { geometry in
-      HTML(urlString: self.urlString, width: geometry.size.width, height: self.$height)
+      
+    VStack {
+      if self.htmlFetcher.isFetched == false {
+        Text("Loading...")
+      }
+      else {
+        HTML(htmlContent: self.htmlFetcher.htmlContent!, width: width).frame(height: 400)
+      }
     }
+    .frame(width: width)
   }
 }
 
 
 struct HTML: UIViewRepresentable {
 
-let urlString: String
+let htmlContent: String
 var width: CGFloat
-@Binding var height: CGFloat
 
-  
-func makeUIView(context: Context) -> UILabel {
+  func makeUIView(context: Context) -> UILabel {
   let label = UILabel()
   label.numberOfLines = 0
   label.lineBreakMode = .byWordWrapping
@@ -40,6 +47,16 @@ func makeUIView(context: Context) -> UILabel {
   return label
 }
 
+func updateUIView(_ uiView: UILabel, context: Context) {
+  let templateReader = TemplateReader()
+  let stringReplaced = templateReader.format(html: htmlContent)
+  let attributedString = try! NSAttributedString(data: stringReplaced.data(using: .utf8)!, options: [.documentType: NSAttributedString.DocumentType.html], documentAttributes: nil)
+
+  uiView.attributedText = attributedString
+  uiView.sizeToFit()
+}
+  
+/*
 func updateUIView(_ uiView: UILabel, context: Context) {
   
   let templateReader = TemplateReader()
@@ -52,12 +69,12 @@ func updateUIView(_ uiView: UILabel, context: Context) {
     DispatchQueue.main.async {
       
       let stringData = String(data: data, encoding: .utf8)!
-        let stringReplaced = templateReader.format(html: stringData)
+      let stringReplaced = templateReader.format(html: htmlString)
        
       let attributedString = try! NSAttributedString(data: stringReplaced.data(using: .utf8)!, options: [.documentType: NSAttributedString.DocumentType.html], documentAttributes: nil)
       
       let height = attributedString.heightWithConstrainedWidth(width: self.width)
-      print("Calculated height \(height)")
+
       uiView.attributedText = attributedString
       uiView.sizeToFit()
       self.height = height
@@ -66,6 +83,7 @@ func updateUIView(_ uiView: UILabel, context: Context) {
   }
   task.resume()
   }
+ */
 }
 
 extension NSAttributedString {
