@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6F163C51250EA0D400315C72 /* dictionaries-v2.css in Resources */ = {isa = PBXBuildFile; fileRef = 6F163C50250EA0D300315C72 /* dictionaries-v2.css */; };
-		6F2EB5D824F8F2AB00D094A1 /* dynamictype2.html in Resources */ = {isa = PBXBuildFile; fileRef = 6F2EB5D724F8F2AB00D094A1 /* dynamictype2.html */; };
 		6F2EB5DA24F8F87C00D094A1 /* HTMLView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F2EB5D924F8F87C00D094A1 /* HTMLView.swift */; };
 		6F53325C24D09E6C00653B61 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F53325B24D09E6C00653B61 /* AppDelegate.swift */; };
 		6F53325E24D09E6C00653B61 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F53325D24D09E6C00653B61 /* SceneDelegate.swift */; };
@@ -19,7 +17,6 @@
 		6F53327324D09E7900653B61 /* WebViewTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F53327224D09E7900653B61 /* WebViewTestTests.swift */; };
 		6F53327E24D09E7900653B61 /* WebViewTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F53327D24D09E7900653B61 /* WebViewTestUITests.swift */; };
 		6F53328C24D09F3900653B61 /* WebViewUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F53328B24D09F3900653B61 /* WebViewUI.swift */; };
-		6F53328E24D0A1C900653B61 /* dynamictype.html in Resources */ = {isa = PBXBuildFile; fileRef = 6F53328D24D0A1C900653B61 /* dynamictype.html */; };
 		6F53329024D0A20500653B61 /* dynamictype.css in Resources */ = {isa = PBXBuildFile; fileRef = 6F53328F24D0A20500653B61 /* dynamictype.css */; };
 		6FC05C55250BE9450095DC9A /* template.html in Resources */ = {isa = PBXBuildFile; fileRef = 6FC05C54250BE9450095DC9A /* template.html */; };
 		6FC05C57250BEB8E0095DC9A /* TemplateReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FC05C56250BEB8E0095DC9A /* TemplateReader.swift */; };
@@ -44,8 +41,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		6F163C50250EA0D300315C72 /* dictionaries-v2.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = "dictionaries-v2.css"; sourceTree = "<group>"; };
-		6F2EB5D724F8F2AB00D094A1 /* dynamictype2.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = dynamictype2.html; sourceTree = "<group>"; };
 		6F2EB5D924F8F87C00D094A1 /* HTMLView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTMLView.swift; sourceTree = "<group>"; };
 		6F53325824D09E6C00653B61 /* WebViewTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebViewTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F53325B24D09E6C00653B61 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -62,7 +57,6 @@
 		6F53327D24D09E7900653B61 /* WebViewTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewTestUITests.swift; sourceTree = "<group>"; };
 		6F53327F24D09E7900653B61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6F53328B24D09F3900653B61 /* WebViewUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewUI.swift; sourceTree = "<group>"; };
-		6F53328D24D0A1C900653B61 /* dynamictype.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = dynamictype.html; sourceTree = "<group>"; };
 		6F53328F24D0A20500653B61 /* dynamictype.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = dynamictype.css; sourceTree = "<group>"; };
 		6FC05C54250BE9450095DC9A /* template.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = template.html; sourceTree = "<group>"; };
 		6FC05C56250BEB8E0095DC9A /* TemplateReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateReader.swift; sourceTree = "<group>"; };
@@ -94,6 +88,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6F163C52250EA57500315C72 /* HTMLView */ = {
+			isa = PBXGroup;
+			children = (
+				6F53328F24D0A20500653B61 /* dynamictype.css */,
+				6FC05C54250BE9450095DC9A /* template.html */,
+				6FC05C56250BEB8E0095DC9A /* TemplateReader.swift */,
+				6F2EB5D924F8F87C00D094A1 /* HTMLView.swift */,
+				6FC05C58250CD4E90095DC9A /* HTMLFetcher.swift */,
+			);
+			path = HTMLView;
+			sourceTree = "<group>";
+		};
 		6F53324F24D09E6C00653B61 = {
 			isa = PBXGroup;
 			children = (
@@ -117,18 +123,11 @@
 		6F53325A24D09E6C00653B61 /* WebViewTest */ = {
 			isa = PBXGroup;
 			children = (
-				6FC05C56250BEB8E0095DC9A /* TemplateReader.swift */,
-				6FC05C54250BE9450095DC9A /* template.html */,
-				6F53328D24D0A1C900653B61 /* dynamictype.html */,
-				6F2EB5D724F8F2AB00D094A1 /* dynamictype2.html */,
-				6F53328F24D0A20500653B61 /* dynamictype.css */,
-				6F163C50250EA0D300315C72 /* dictionaries-v2.css */,
+				6F163C52250EA57500315C72 /* HTMLView */,
 				6F53325B24D09E6C00653B61 /* AppDelegate.swift */,
 				6F53325D24D09E6C00653B61 /* SceneDelegate.swift */,
 				6F53325F24D09E6C00653B61 /* ContentView.swift */,
 				6F53328B24D09F3900653B61 /* WebViewUI.swift */,
-				6FC05C58250CD4E90095DC9A /* HTMLFetcher.swift */,
-				6F2EB5D924F8F87C00D094A1 /* HTMLView.swift */,
 				6F53326124D09E7900653B61 /* Assets.xcassets */,
 				6F53326624D09E7900653B61 /* LaunchScreen.storyboard */,
 				6F53326924D09E7900653B61 /* Info.plist */,
@@ -267,12 +266,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6F53328E24D0A1C900653B61 /* dynamictype.html in Resources */,
-				6F2EB5D824F8F2AB00D094A1 /* dynamictype2.html in Resources */,
 				6FC05C55250BE9450095DC9A /* template.html in Resources */,
 				6F53326824D09E7900653B61 /* LaunchScreen.storyboard in Resources */,
 				6F53326524D09E7900653B61 /* Preview Assets.xcassets in Resources */,
-				6F163C51250EA0D400315C72 /* dictionaries-v2.css in Resources */,
 				6F53329024D0A20500653B61 /* dynamictype.css in Resources */,
 				6F53326224D09E7900653B61 /* Assets.xcassets in Resources */,
 			);
@@ -472,7 +468,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"WebViewTest/Preview Content\"";
-				DEVELOPMENT_TEAM = KR36LV3S5F;
+				DEVELOPMENT_TEAM = X2QUNAY3NM;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = WebViewTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -492,7 +488,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"WebViewTest/Preview Content\"";
-				DEVELOPMENT_TEAM = KR36LV3S5F;
+				DEVELOPMENT_TEAM = X2QUNAY3NM;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = WebViewTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (

@@ -11,8 +11,6 @@ import SwiftUI
 
 struct HTMLView : View {
   
-  
-  // var urlString:String
   @ObservedObject var htmlFetcher:HTMLFetcher
   var width:CGFloat
 
@@ -54,7 +52,6 @@ struct HTML: UIViewRepresentable {
   func updateUIView(_ uiView: UILabel, context: Context) {
     uiView.attributedText = attrString
   }
-  
 }
 
 extension NSAttributedString {
