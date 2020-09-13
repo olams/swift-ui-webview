@@ -13,9 +13,11 @@ struct ContentView: View {
   
   var urls = [
     "https://jf-ne.clarify.no/api/articles/16364635-collapsed.html?preferredLocale=en",
-    "https://jf-ne.clarify.no/api/articles/16364635-expanded.html?preferredLocale=en",
-    "https://jf-ne.clarify.no/api/articles/16364635-collapsed.html?preferredLocale=en",
-    "https://jf-ne.clarify.no/api/articles/16364635-collapsed.html?preferredLocale=en"
+    "https://jf-ne.clarify.no/api/articles/20060277-collapsed.html?preferredLocale=no",
+
+    "https://jf-ne.clarify.no/api/articles/16255576-collapsed.html?preferredLocale=no",
+
+    "https://jf-ne.clarify.no/api/articles/16234076-collapsed.html?preferredLocale=no"
   ]
     
   var body: some View {
@@ -25,7 +27,7 @@ struct ContentView: View {
       VStack {
         ScrollView {
           ForEach (self.urls, id:\.self) { u in
-            HTMLView(htmlFetcher: HTMLFetcher(self.urls[0]), width: geometry.size.width).padding(1)
+            HTMLView(htmlFetcher: HTMLFetcher(u), width: geometry.size.width).padding(0.4)
           }
         }
       }.background(Color.yellow)

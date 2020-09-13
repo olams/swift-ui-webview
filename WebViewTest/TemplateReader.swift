@@ -17,7 +17,7 @@ class TemplateReader {
   }
   
   func format(html:String) -> String {
-    var template = readTemplate()
+    let template = readTemplate()
     return template.replacingOccurrences(of: "$body", with: html)
   }
 }

@@ -25,7 +25,7 @@ struct HTMLView : View {
         }.frame(width: width)
       }
       else {
-        HTML(htmlContent: self.htmlFetcher.htmlContent!, width: width)
+        HTML(htmlContent: self.htmlFetcher.htmlContent!, width: width, attrString: self.htmlFetcher.attrString!)
       }
     }
     .background(Color.white)
@@ -36,57 +36,25 @@ struct HTMLView : View {
 
 struct HTML: UIViewRepresentable {
 
-let htmlContent: String
-var width: CGFloat
-
+  let htmlContent: String
+  var width: CGFloat
+  var attrString:NSAttributedString
+  
   func makeUIView(context: Context) -> UILabel {
-  let label = UILabel()
-  label.numberOfLines = 0
-  label.lineBreakMode = .byWordWrapping
-  label.autoresizesSubviews = true
-  label.autoresizingMask = [ .flexibleWidth, .flexibleHeight]
-  label.setContentCompressionResistancePriority(.defaultLow, for: .horizontal)
-  label.preferredMaxLayoutWidth = width
-  return label
-}
-
-func updateUIView(_ uiView: UILabel, context: Context) {
-  let templateReader = TemplateReader()
-  let stringReplaced = templateReader.format(html: htmlContent)
-  let attributedString = try! NSAttributedString(data: stringReplaced.data(using: .utf8)!, options: [.documentType: NSAttributedString.DocumentType.html], documentAttributes: nil)
-
-  uiView.attributedText = attributedString
-  uiView.sizeToFit()
-}
-  
-/*
-func updateUIView(_ uiView: UILabel, context: Context) {
-  
-  let templateReader = TemplateReader()
-  let url = URL(string: urlString)!
-  
-  let task = URLSession.shared.dataTask(with: url) {(data, response, error) in
-       guard let data = data else { return }
-    
-   
-    DispatchQueue.main.async {
-      
-      let stringData = String(data: data, encoding: .utf8)!
-      let stringReplaced = templateReader.format(html: htmlString)
-       
-      let attributedString = try! NSAttributedString(data: stringReplaced.data(using: .utf8)!, options: [.documentType: NSAttributedString.DocumentType.html], documentAttributes: nil)
-      
-      let height = attributedString.heightWithConstrainedWidth(width: self.width)
-
-      uiView.attributedText = attributedString
-      uiView.sizeToFit()
-      self.height = height
-
-    }
+    let label = UILabel()
+    label.numberOfLines = 0
+    label.lineBreakMode = .byWordWrapping
+    label.autoresizesSubviews = true
+    label.autoresizingMask = [ .flexibleWidth, .flexibleHeight]
+    label.setContentCompressionResistancePriority(.defaultLow, for: .horizontal)
+    label.preferredMaxLayoutWidth = width
+    return label
   }
-  task.resume()
+
+  func updateUIView(_ uiView: UILabel, context: Context) {
+    uiView.attributedText = attrString
   }
- */
+  
 }
 
 extension NSAttributedString {
