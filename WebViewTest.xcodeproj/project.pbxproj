@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6F163C51250EA0D400315C72 /* dictionaries-v2.css in Resources */ = {isa = PBXBuildFile; fileRef = 6F163C50250EA0D300315C72 /* dictionaries-v2.css */; };
 		6F2EB5D824F8F2AB00D094A1 /* dynamictype2.html in Resources */ = {isa = PBXBuildFile; fileRef = 6F2EB5D724F8F2AB00D094A1 /* dynamictype2.html */; };
 		6F2EB5DA24F8F87C00D094A1 /* HTMLView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F2EB5D924F8F87C00D094A1 /* HTMLView.swift */; };
 		6F53325C24D09E6C00653B61 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F53325B24D09E6C00653B61 /* AppDelegate.swift */; };
@@ -43,6 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6F163C50250EA0D300315C72 /* dictionaries-v2.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = "dictionaries-v2.css"; sourceTree = "<group>"; };
 		6F2EB5D724F8F2AB00D094A1 /* dynamictype2.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = dynamictype2.html; sourceTree = "<group>"; };
 		6F2EB5D924F8F87C00D094A1 /* HTMLView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTMLView.swift; sourceTree = "<group>"; };
 		6F53325824D09E6C00653B61 /* WebViewTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebViewTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -120,6 +122,7 @@
 				6F53328D24D0A1C900653B61 /* dynamictype.html */,
 				6F2EB5D724F8F2AB00D094A1 /* dynamictype2.html */,
 				6F53328F24D0A20500653B61 /* dynamictype.css */,
+				6F163C50250EA0D300315C72 /* dictionaries-v2.css */,
 				6F53325B24D09E6C00653B61 /* AppDelegate.swift */,
 				6F53325D24D09E6C00653B61 /* SceneDelegate.swift */,
 				6F53325F24D09E6C00653B61 /* ContentView.swift */,
@@ -269,6 +272,7 @@
 				6FC05C55250BE9450095DC9A /* template.html in Resources */,
 				6F53326824D09E7900653B61 /* LaunchScreen.storyboard in Resources */,
 				6F53326524D09E7900653B61 /* Preview Assets.xcassets in Resources */,
+				6F163C51250EA0D400315C72 /* dictionaries-v2.css in Resources */,
 				6F53329024D0A20500653B61 /* dynamictype.css in Resources */,
 				6F53326224D09E7900653B61 /* Assets.xcassets in Resources */,
 			);

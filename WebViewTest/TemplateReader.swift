@@ -17,11 +17,15 @@ class TemplateReader {
   }
   
   func format(html:String) -> String {
-    
-    let cssPath = Bundle.main.path(forResource: "dynamictype", ofType: "css")!
+
+    let css1 = Bundle.main.path(forResource: "dictionaries-v2", ofType: "css")!
+    let css2 = Bundle.main.path(forResource: "dynamictype", ofType: "css")!
     var template = readTemplate()
+    
     template = template.replacingOccurrences(of: "$body", with: html)
-    template = template.replacingOccurrences(of: "$css", with: "file://\(cssPath)")
+    template = template.replacingOccurrences(of: "$css1", with: "file://\(css1)")
+    template = template.replacingOccurrences(of: "$css2", with: "file://\(css2)")
+
     return template
   }
 }
