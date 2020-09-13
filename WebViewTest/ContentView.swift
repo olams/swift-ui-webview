@@ -21,11 +21,14 @@ struct ContentView: View {
   var body: some View {
     
     GeometryReader { geometry in
-      ScrollView {
-        ForEach (self.urls, id:\.self) { u in
-          HTMLView(htmlFetcher: HTMLFetcher(self.urls[0]), width: geometry.size.width)
+
+      VStack {
+        ScrollView {
+          ForEach (self.urls, id:\.self) { u in
+            HTMLView(htmlFetcher: HTMLFetcher(self.urls[0]), width: geometry.size.width).padding(1)
+          }
         }
-      }
+      }.background(Color.yellow)
     }
   }
 }

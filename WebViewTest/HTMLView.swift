@@ -20,12 +20,15 @@ struct HTMLView : View {
       
     VStack {
       if self.htmlFetcher.isFetched == false {
-        Text("Loading...")
+        HStack {
+          Text("Loading...").padding(10)
+        }.frame(width: width)
       }
       else {
-        HTML(htmlContent: self.htmlFetcher.htmlContent!, width: width).frame(height: 400)
+        HTML(htmlContent: self.htmlFetcher.htmlContent!, width: width)
       }
     }
+    .background(Color.white)
     .frame(width: width)
   }
 }
