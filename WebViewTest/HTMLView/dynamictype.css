@@ -1,0 +1,28 @@
+.dict-headword {
+ color: red;
+ font: -apple-system-headline;
+}
+
+.dict-header-level-1 {
+   display: none;
+}
+
+ .title {
+     font: -apple-system-title;
+ }
+
+ .headline {
+     font: -apple-system-headline;
+ }
+
+ .subheadline {
+     font: -apple-system-subheadline;
+ }
+
+ footer {
+     font: -apple-system-footnote;
+ }
+
+ * {
+     font: -apple-system-body;
+ }

@@ -10,17 +10,25 @@
 import SwiftUI
 
 struct ContentView: View {
+
+  // URLs to fetch.
+  var urls = [
+    "https://jf-ne.clarify.no/api/articles/16364635-collapsed.html?preferredLocale=en&hostapp=ios",
+    "https://jf-ne.clarify.no/api/articles/20060277-collapsed.html?preferredLocale=no&hostapp=ios",
+    "https://jf-ne.clarify.no/api/articles/16255576-expanded.html?preferredLocale=no&hostapp=ios",
+    "https://jf-ne.clarify.no/api/articles/16234076-collapsed.html?preferredLocale=no&hostapp=ios"
+  ]
+    
   var body: some View {
+    
     GeometryReader { geometry in
-      ScrollView(.vertical) {
-        VStack {
-          Text ( "Webview in SwiftUI").font(.headline)
-          DynamicWebView(fileName: "dynamictype").background(Color.red)
-          
-          Text ("UILabel with HTML").font(.headline)
-          AsyncHTMLabel(urlString: "dynamictype", width: geometry.size.width)
+      VStack {
+        ScrollView {
+          ForEach (self.urls, id:\.self) { u in
+            HTMLView(htmlFetcher: HTMLFetcher(u), width: geometry.size.width).padding(0.4)
+          }
         }
-      }.background(Color.blue)
+      }.background(Color.yellow)
     }
   }
 }
