@@ -17,8 +17,12 @@ class TemplateReader {
   }
   
   func format(html:String) -> String {
-    let template = readTemplate()
-    return template.replacingOccurrences(of: "$body", with: html)
+    
+    let cssPath = Bundle.main.path(forResource: "dynamictype", ofType: "css")!
+    var template = readTemplate()
+    template = template.replacingOccurrences(of: "$body", with: html)
+    template = template.replacingOccurrences(of: "$css", with: "file://\(cssPath)")
+    return template
   }
 }
 

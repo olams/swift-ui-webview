@@ -1,21 +1,29 @@
+.dict-headword {
+   color: red;
+   font: -apple-system-headline;
+ }
+ 
+ .dict-header-level-1 {
+     display: none;
+   }
+ 
+   .title {
+       font: -apple-system-title;
+   }
 
-* {
-    font: -apple-system-body;
-}
+   .headline {
+       font: -apple-system-headline;
+   }
 
-.title {
-    font: -apple-system-title;
-}
+   .subheadline {
+       font: -apple-system-subheadline;
+   }
 
-.headline {
-    font: -apple-system-headline;
-}
+   footer {
+       font: -apple-system-footnote;
+   }
 
-.subheadline {
-    font: -apple-system-subheadline;
-}
-
-footer {
-    font: -apple-system-footnote;
-}
-
+ 
+ * {
+     font: -apple-system-body;
+ }
